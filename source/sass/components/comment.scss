@@ -1,0 +1,121 @@
+.comment {
+    .swiper {
+        padding-left: 13px;
+
+        @media (min-width: $desktop-width) {
+            padding-left: 0;
+        }
+    }
+
+    .swiper-wrapper {
+        margin-bottom: 20px;
+
+        @media (min-width: $large-width) {
+            margin-bottom: 35px;
+        }
+    }
+
+    .swiper-slide {
+        width: 330px;
+
+        @media (min-width: $large-width) {
+            width: 540px;
+        }
+    }
+
+    .swiper-pagination {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        padding-bottom: 45px;
+
+        @media (min-width: $tablet-width) {
+            padding-bottom: 0;
+            justify-content: flex-start;
+            margin-left: 115px;
+        }
+
+        @media (min-width: $large-width) {
+            justify-content: flex-start;
+            margin-left: 130px;
+        }
+
+        @media (min-width: $large-width) {
+            margin-left: 220px;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background-color: $primary-color;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        background-image: url('../img/rocket.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        align-items: center;
+        padding: 70px 0 45px 20px;
+    }
+
+    @media (min-width: $large-width) {
+        padding-top: 90px;
+    }
+}
+
+.comment__content {
+    padding: 60px 13px 36px;
+
+    @media (min-width: $tablet-width) {
+        padding: 0 30px 0 0;
+        flex: 0 0 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding:50px 0 50px;
+    }
+}
+
+.comment__body {
+    @media (min-width: $desktop-width) {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    } 
+
+    @media (min-width: $large-width) {
+        margin-right: 120px;
+    }
+}
+
+.comment__title {
+    margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 30px;
+    }
+}
+
+.comment__text {
+    line-height: 20px;
+}
+
+.comment__img {
+    @media (min-width: $desktop-width) {
+        img {
+            width: 100%;
+        }
+    }
+}

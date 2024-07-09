@@ -1,0 +1,125 @@
+.product {
+    @media (min-width: $tablet-width) {
+        padding: 30px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 55px 0 70px;
+    }
+}
+
+.product__body {
+    padding: 35px 13px 50px;
+
+    @media (min-width: $desktop-width) {
+        padding: 0;
+    }
+}
+
+.product__title {
+    margin-bottom: 15px;
+    @media (min-width: $desktop-width) {
+        font-size: 48px;
+    }
+}
+
+.product__text {
+    margin-bottom: 40px;
+    @media (min-width: $large-width) {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+.product__list {
+    margin-bottom: 35px;
+}
+
+.product__item{
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 18px;
+        height: 13px;
+        top: 13px;
+        left: 0;
+        background: no-repeat url('../img/tick.svg');
+    }
+
+    @media (min-width: $large-width) {
+        &::before {
+            top: 5px;
+        }
+    }
+}
+
+.product__form {
+max-width: 445px;
+}
+
+.product__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.product__radio {
+    border: 1px solid $primary-color;
+    margin-bottom: 20px;
+}
+
+.product__lable {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 15px 50px;
+    border-bottom: 1px solid $primary-color;
+    cursor: pointer;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.product__mark {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 16px;
+    height: 16px;
+    background-color: $white-color;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+}
+
+.product__price {
+    font-size: 16px;
+    font-weight: 600;
+    color: $dark-color;
+}
+
+input[type="radio"]:checked+.product__mark::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    top: 2px;
+    left: 2px;
+}
+
+.product__btn {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 17px 20px 20px;
+}

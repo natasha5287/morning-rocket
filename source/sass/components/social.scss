@@ -1,0 +1,26 @@
+.social__title {
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    line-height: 32px;
+
+    @media (min-width: $large-width) {
+        padding: 0;
+    }
+}
+
+.social__list {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.social__link {
+    svg {
+        width: 55px;
+        height: 55px;
+    }
+}

@@ -1,0 +1,55 @@
+.story {
+    padding: 70px 13px 65px;
+    color: $white-color;
+    background-color: $primary-color;
+    background-image: url('../img/background/story_mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+        background: no-repeat url('../img/background/story_mobile@2x.jpg');
+        background-size: cover;
+    }
+
+    @media (min-width: $tablet-width) {
+        background-image: url('../img/background/story_desktop.jpg');
+
+        @media (min-resolution: 2dppx) {
+            background: no-repeat url('../img/background/story_desktop@2x.jpg');
+            background-size: cover;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        align-items: center;
+        min-height: 640px;
+    }
+}
+
+.story__wrap {
+    @media (min-width: $large-width) {
+        width: 1110px;
+        margin: 0 auto;
+    }
+}
+
+.story__title {
+    color: inherit;
+    margin-bottom: 20px;
+    max-width: 500px;
+
+    @media (min-width: $large-width) {
+        margin-bottom: 10px;
+    }
+}
+
+.story__text {
+    max-width: 540px;
+
+    @media (min-width: $large-width) {
+        font-size: 20px;
+        line-height: 32px;
+    }
+}

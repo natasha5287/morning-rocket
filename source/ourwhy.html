@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Morning Rocket</title>
+</head>
+<body>
+    <header class="header">
+
+        <div class="header__container">
+            <button class="header__toggle" type="button">
+                <span class="visually-hidden">open navigation</span>
+                <span></span> 
+            </button>   
+    
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="catalog.html"><span>Shop</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#"><span>Our WHY</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="faqs.html"><span> FAQ</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#"><span>Contact US</span></a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <a class="header__img" href="index.html">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1024px)"
+                        srcset="./img/logo-header_desktop.webp 1x, ./img/logo-header_desktop@2x.webp 2x">
+                    <source type="image/webp"
+                        srcset="./img/logo-header_mobile.webp 1x, ./img/logo-header_mobile@2x.webp 2x">
+                    <source media="(min-width: 1024px)"
+                        srcset="./img/logo-header_desktop.png 1x, ./img/logo-header_desktop@2x.png 2x">
+                    <img class="header__logo" src="./img/logo-header_mobile.png"
+                        srcset="./img/logo-header_mobile@2x.png" width="87" height="48" alt="logotype">
+                </picture>
+            </a>
+    
+            <a class="header__cart">
+                <span>Cart</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                </svg>
+                <span class="header_count">3</span>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="banner banner__why">
+            <h2 class="banner__title headline headline-xl headline-white">Our WHY</h2>
+            <p class="banner__text banner__text-why">EAsk any coffee brand founder and you’ll see that coffee is the central occupation of countless startup stories…</p>
+        </section>
+
+        <section class="why">
+            <div class="why__wrap">
+                <h2 class="why__title headline">That’s not the case with Morning Rocket.</h2>
+                <p class="why__text text-m">Simply put, our founder <span class="pink">didn’t</span> have previous exposure to the industry. While coffee was always at the centre of our brand story, it ironically was not his primary occupation.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="container__image">
+                <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/coffee_desktop.webp 1x, ./img/coffee_desktop@2x.webp 2x">
+                    <source type="image/webp"
+                        srcset="./img/coffee_mobile.webp 1x, ./img/coffee_mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./img/coffee_desktop.jpg 1x, ./img/coffee_desktop@2x.jpg 2x">
+                    <img src="./imcoffee_mobile.jpg"
+                        srcset="./imcoffee_mobile@2x.jpg" width="375" height="300" alt="plant" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="container__content">
+                <div class="container__wrap">
+                    <div class="product__body">
+                        <h2 class="product__title headline">So why coffee?</h2>
+                        <h3>It all comes down to our mission:</h3>
+                        <p>Empowering local farmers in Myanmar to stop growing opium and producing methamphetamine while still earning a consistent income. After a wave of US sanctions, a crumbling banking system with curtailed access to harvest-dependent agriculture loans, the global pandemic, and a tumultuous military coup, these farmers had no other choice than to support illicit drug production.</p>
+                                     
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-reverse container-reverse-padding">
+            <div class="container-reverse__image">
+                <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/boy_desktop.webp 1x, ./img/boy_desktop@2x.webp 2x">
+                    <source type="image/webp"
+                        srcset="./img/boy_mobile.webp 1x, ./img/boy_mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./img/boy_desktop.jpg 1x, ./img/boy_desktop@2x.jpg 2x">
+                    <img src="./img/boy_mobile.jpg"
+                        srcset="./img/boy_mobile@2x.jpg" width="350" height="325" alt="a litte boy" loading="lazy">
+                </picture>
+            </div>
+            <div class="container-reverse__content">
+                <div class="container-reverse__wrap">
+                    <h2 class="container-reverse__title headline">Our founder was inspired to offer another way forward. <span class="pink">Coffee</span> was the answer. </h2>
+                    <p class="">Given that Myanmar is the second largest opium-producing country with 90% of all production coming from the Shan State, Morning Rocket had a clear starting point. On top of that, our founder recognized the importance of addressing the methamphetamine problem too, as Myanmar is the top-producing country globally. From there, he began meeting with local farmers, touring milling plants, and coordinating with exporters. The goal was <i class="pink">originally</i> to sell coffee to Australian roasteries. </p>
+                </div>    
+            </div>
+        </section>
+
+        <section class="why why-pink">
+            <div class="why__wrap">
+                <h2 class="why__title headline headline-white">That’s when they encountered a major setback…</h2>
+                <p class="why__text">Ethical sourcing methods were an <i>afterthought</i>  for these roasteries. Instead, the primary focus was getting the highest quantity of premium coffee for the lowest price. Although Myanmar coffee is a step above local competing markets in Brazil, Colombia, Thailand, Laos, and beyond, its <i>lower production quantity</i> per acre simply couldn’t compete with large-scale producers. Despite the setback, our founder was inspired to put Myanmar’s coffee market on the map.</p>
+            </div>
+        </section>
+
+        <section class="why">
+            <div class="why__wrap">
+                <h2 class="why__title headline">That’s not the case with Morning Rocket.</h2>
+                <p class="why__text text-m">Simply put, our founder <span class="pink">didn’t</span> have previous exposure to the industry. While coffee was always at the centre of our brand story, it ironically was not his primary occupation.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="container__image">
+                <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/cup_desktop.webp 1x, ./img/cup_desktop@2x.webp 2x">
+                    <source type="image/webp"
+                        srcset="./img/cup_mobile.webp 1x, ./img/cup_mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./img/cup_desktop.jpg 1x, ./img/cup_desktop@2x.jpg 2x">
+                    <img src="./imcup_mobile.jpg"
+                        srcset="./imcup_mobile@2x.jpg" width="375" height="300" alt="a cup of coffee" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="container__content">
+                <div class="container__wrap">
+                    <div class="product__body">
+                        <h2 class="product__title headline">So our founder <span class="pink">pivoted</span>  and decided to sell <span class="pink">directly</span> to consumers. </h2>
+                        <h3>The result?</h3>
+                        <p>Some of the world’s <i class="pink">best coffee</i>  with a share-worthy purpose. Now, Morning Rocket is available throughout Australia with an unwavering commitment to social responsibility, ethical sourcing, and premier quality.</p>
+                        <p>We invite you to join in our mission and help us give farmers in Myanmar an alternative to growing opium.</p>
+                        <h3>That’s a brew we can all feel good about.</h3>
+                                     
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ads">
+            <div class="ads__box">
+                <h2 class="ads__title headline headline-l">Place Your Order</h2>
+                <p class="ads__text">Every Morning Rocket order makes a meaningful difference beyond what’s possible with conventional coffees. Place your order <span>today</span> for a brighter <span>tomorrow</span> in Myanmar. 
+                </p>
+                <a class="ads__button button button-arrow" href="#">
+                    Shop now
+                    <svg aria-hidden="true" viewBox="0 0 33 18" width="33" height="18">
+                        <use xlink:href="./img/sprite.svg#arrow-btn"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="ads__img">
+                <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/ads_desktop.webp 1x, ./img/ads_desktop@2x.webp 2x">
+                    <source type="image/webp"
+                        srcset="./img/ads_mobile.webp 1x, ./img/ads_mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./img/ads_desktop.jpg 1x, ./img/ads_desktop@2x.jpg 2x">
+                    <img src="./img/ads_mobile.jpg"
+                        srcset="./img/ads_mobile@2x.jpg" width="375" height="275" alt="coffee ads" loading="lazy">
+                </picture>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__wrapper">
+                <div class="footer__box">
+                   <a class="footer__img" href="index.html">
+                       <picture>
+                           <source type="image/webp" media="(min-width: 1024px)"
+                               srcset="./img/logo-footer_desktop.webp 1x, ./img/logo-footer_desktop@2x.webp 2x">
+                           <source type="image/webp"
+                               srcset="./img/logo-footer_mobile.webp 1x, ./img/logo-footer_mobile@2x.webp 2x">
+                           <source media="(min-width: 1024px)"
+                               srcset="./img/logo-footer_desktop.png 1x, ./img/logo-footer_desktop@2x.png 2x">
+                           <img src="./img/logo-footer_mobile.png"
+                               srcset="./img/logo-footer_mobile@2x.png" width="119" height="68" alt="logotype">
+                       </picture>
+                   </a>
+                   <div class="footer__social social">
+                        <h3 class="social__title">Follow us</h3>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <span class="visually-hidden">instagram</span>
+                                    <svg aria-hidden="true" viewBox="0 0 46 47" width="46" height="47">
+                                        <use xlink:href="./img/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <span class="visually-hidden">facebook</span>
+                                    <svg aria-hidden="true" viewBox="0 0 46 47" width="46" height="47">
+                                        <use xlink:href="./img/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <span class="visually-hidden">tik-tok</span>
+                                    <svg aria-hidden="true" viewBox="0 0 46 47" width="46" height="47">
+                                        <use xlink:href="./img/sprite.svg#tiktok"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+                <div class="footer__registr">
+                    <h3 class="footer__subtitle">Sign up </h3>
+                    <p>Here to receive update on our missions, tree samples and our travel insights in Myanmar.</p>
+                    <form class="footer__form">
+                        <label for="email">
+                            <input class="footer__input" type="email" id="email" placeholder="Enter your Email">
+                        </label>
+                        <button class="footer__btn button" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__subtitle">Navigation</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="index.html">Home</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="catalog.html">Shop</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">OUR WHY</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="faqs.html">FAQ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrap">
+                <div class="footer__note">
+                    <p>Terms of Service</p>
+                    <p>Refund policy</p>
+                </div>
+                <p class="footer__copyright">© 2023, Morning Rocket All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="scripts/main.min.js" type="module"></script>
+
+</body>
+</html>

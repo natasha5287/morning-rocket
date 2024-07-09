@@ -1,0 +1,45 @@
+.why {
+    background-color: $bg-color;
+
+    &-pink {
+        background-color: $secondary-color;
+        color: $white-color;
+    }
+}
+
+.why__wrap {
+    padding: 40px 13px 50px;
+
+    @media (min-width: $tablet-width) {
+        padding: 80px 20px 70px;
+        display: flex;
+    }
+
+    @media (min-width: $desktop-width) {
+        column-gap: 30px;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.why__title {
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+        width: 50%;
+        margin-bottom: 0;
+    } 
+}
+
+.why__text {
+
+    i {
+        color: $primary-color;
+    }
+
+    @media (min-width: $tablet-width) {
+        width: 50%;
+    } 
+}

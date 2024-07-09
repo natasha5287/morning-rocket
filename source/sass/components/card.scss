@@ -1,0 +1,25 @@
+.card__image {
+    margin-bottom: 22px;
+    display: block;
+}
+
+.card__img {
+    display: block;
+    width: 100%;
+}
+
+.card__link {
+    color: $dark-color;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.card__descr {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.card__btn {
+    width: 100%;
+}

@@ -1,0 +1,127 @@
+.right {
+
+    @media (min-width: $tablet-width) {
+        .container__image {
+            padding-bottom: 37%;
+        }
+    }
+}
+
+.right__body {
+    padding: 25px 13px 65px;
+
+    @media (min-width: $large-width) {
+        padding: 20px 0 0 0;
+    }
+}
+
+.right__title {
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 30px;
+        text-align: left;
+        max-width: 415px;
+    }
+
+    @media (min-width: $large-width) {
+        margin-bottom: 40px;
+    }
+}
+
+.right__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 35px;
+
+    @media (min-width: $large-width) {
+        font-size: 24px;
+        row-gap: 23px;
+    }
+}
+
+.right__item {
+    position: relative;
+    padding-left: 35px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 18px;
+        height: 13px;
+        top: 13px;
+        left: 0;
+        background: no-repeat url('../img/tick.svg');
+    }
+
+    @media (min-width: $large-width) {
+        padding-left: 46px;
+
+        &::before {
+            top: 5px;
+        }
+    }
+}
+
+.right__benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 35px;
+    row-gap: 25px;
+
+    @media (min-width: $desktop-width) {
+        justify-content: flex-start;
+        column-gap: 25px;
+    }
+
+    @media (min-width: $large-width) {
+        column-gap: 40px;
+    }
+}
+
+.right__benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    @media (max-width: 1023px) {
+        &:last-child {
+            margin-left: 25px;
+        }
+    }
+
+    @media (min-width: $tablet-width) {
+        max-width: 77px;
+    }
+
+    @media (min-width: $large-width) {
+        row-gap: 15px;
+    }
+}
+
+.right__cirlce {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $button-color;
+    width: 65px;
+    height: 65px;
+    border: 2px solid $button-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    span {
+        font-size: 20px;
+    }
+}
+
+.right__descr {
+    text-align: center;
+}

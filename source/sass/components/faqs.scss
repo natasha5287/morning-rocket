@@ -1,0 +1,152 @@
+.faqs {
+    padding: 40px 13px;
+    background-color: $bg-color;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 90px;
+        padding-bottom: 65px;
+    }
+}
+
+.faqs__title {
+    text-align: center;
+    margin-bottom: 30px;
+    span {
+        text-transform: capitalize;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 45px;
+    }
+}
+
+.faqs__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    max-width: 730px;
+    margin: 0 auto 25px;
+
+    &-margin {
+        margin-bottom: 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 30px;
+    }
+}
+
+.faqs__item {
+    background-color: $white-color;
+    border-radius: 10px;
+    padding: 17px 20px 20px;
+    cursor: pointer;
+}
+
+.faqs__item.opened {
+
+    .faqs__content {
+        display: block;
+        padding: 10px 0 0 0;
+        overflow: auto;
+        height: auto;
+    }
+
+    span {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.faqs__item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+
+    p {
+        width: 250px;
+    }
+
+    span {
+        position: relative;
+        width: 30px;
+        height: 30px;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            background-color: #E7D9CA;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &::before {
+            width: 16px;
+            height: 1px;
+        }
+
+        &::after {
+            width: 1px;
+            height: 16px;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+
+        align-items: center;
+
+        p {
+            width: auto;
+            max-width: 95%;
+            font-size: 18px;
+        }
+
+        span {
+            &::before {
+                width: 20px;
+                height: 2px;
+            }
+
+            &::after {
+                width: 2px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+
+.faqs__content {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    transition: 0.3s all;
+    overflow: hidden;
+    height: 0px;
+    max-width: 530px;
+
+    @media (min-width: $desktop-width) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.faqs__button {
+    color: $primary-color;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-weight: 600;
+    }
+}

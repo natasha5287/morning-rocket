@@ -1,0 +1,21 @@
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+
+    @media (min-width: $desktop-width) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 60px;
+    }
+}
+
+.nav__link {
+    color: #04234D;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}

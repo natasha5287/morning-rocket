@@ -1,0 +1,204 @@
+.liftoff {
+    padding: 60px 0;
+
+    @media (min-width: $large-width)  {
+        padding-top: 85px;
+        padding-bottom: 0;
+    }
+}
+
+.liftoff__container {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 102px;
+        height: 101px;
+        bottom: -20px;
+        left: 25px;
+        background: no-repeat url('../img/bike_mobile.png') center;
+
+        @media (min-resolution: 2dppx) {
+            background: no-repeat url('../img/bike_mobile@2x.png');
+            background-size: cover;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 121px;
+        height: 126px;
+        bottom: 0;
+        right: 10px;
+        background: no-repeat url('../img/sloth_mobile.png') center;
+
+        @media (min-resolution: 2dppx) {
+            background: no-repeat url('../img/sloth_mobile@2x.png');
+            background-size: cover;
+        }
+    }
+
+    @media (min-width: $tablet-width) {
+        &::before {
+            width: 198px;
+            height: 196px;
+            bottom: -40px;
+            left: -10px;
+            background: no-repeat url('../img/bike_desktop.png') center;
+
+            @media (min-resolution: 2dppx) {
+                background: no-repeat url('../img/bike_desktop@2x.png');
+                background-size: cover;
+            }
+        }
+
+        &::after {
+            width: 193px;
+            height: 202px;
+            bottom: -35px;
+            background: no-repeat url('../img/sloth_desktop.png') center;
+
+            @media (min-resolution: 2dppx) {
+                background: no-repeat url('../img/sloth_desktop@2x.png');
+                background-size: cover;
+            }
+        }
+    }
+
+    @media (min-width: $large-width) {
+        max-width: 1110px;
+        margin: 0 auto;
+
+        &::after {
+            right: -45px;
+            bottom: 0;
+        }
+
+        &::before {
+            left: -20px;
+        }
+    }
+}
+
+.liftoff__title {
+    text-align: center;
+    margin-bottom: 15px;
+
+    @media (min-width: $large-width) {
+        margin-bottom: 20px;
+    }
+}
+
+.liftoff__text {
+    position: relative;
+    text-align: center;
+    padding: 0 35px 75px;
+    max-width: 590px;
+    margin: 0 auto;
+
+    @media (min-width: $large-width) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @media (min-width: $large-width) {
+        font-size: 24px;
+    }
+}
+
+.liftoff__wrap {
+    @media (min-width: $desktop-width) {
+        display: flex;
+    }
+}
+ 
+
+.liftoff__box {
+    padding: 50px 0 0;
+
+    @media (min-width: $desktop-width) {
+        padding: 0;
+    }
+}
+
+.liftoff__img {
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    @media (min-width: $large-width) {
+        width: 50%;
+    }
+}
+
+.liftoff__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    padding: 0 13px;
+    margin-bottom: 10px;
+
+    @media (min-width: $desktop-width) {
+        padding-left: 40px;
+        max-width: 540px;
+    }
+
+    @media (min-width: $large-width) {
+        padding-top: 15px;
+    }
+}
+
+.liftoff__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #F4E8DB;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: grid;
+        grid-template-columns: 70px 1fr;
+    }
+
+    @media (min-width: $large-width) {
+        column-gap: 15px;
+    }
+}
+
+.liftoff__subtitle {
+    text-align: center;
+
+    @media (min-width: $desktop-width) {
+        justify-self: flex-start;
+        text-align: left;
+        grid-area: 1/2/2/3;
+    }
+}
+
+.liftoff__description {
+    text-align: center;
+    padding-bottom: 32px;
+
+    @media (min-width: $desktop-width) {
+        justify-self: flex-start;
+        text-align: left;
+        grid-area: 2/2/3/3;
+    }
+}
+
+.liftoff__button {
+    @media (min-width: $desktop-width) {
+        margin: 0 0 0 110px ;
+    }
+
+    @media (min-width: $large-width) {
+        margin-left: 125px;
+    }
+}
