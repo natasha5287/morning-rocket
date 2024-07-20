@@ -9,7 +9,8 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import browser from 'browser-sync';
-import squoosh from 'gulp-libsquoosh';
+import webp from 'gulp-webp';
+import imagemin from 'gulp-imagemin';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import fonter from 'gulp-fonter';
@@ -64,7 +65,7 @@ const scripts = () => {
 // Images
 const optimizeImages = () => {
     return gulp.src('source/img/**/*.{png,jpg}')
-        .pipe(squoosh())
+        .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
 }
 
@@ -77,9 +78,10 @@ const copyImages = () => {
 
 const createWebp = () => {
     return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*.{png,jpg}', '!source/img/background/*.{png,jpg}'])
-        .pipe(squoosh({
-            webp: {}
-        }))
+        // .pipe(squoosh({
+        //     webp: {}
+        // }))
+        .pipe(webp())
         .pipe(gulp.dest('dist/img'))
 }
 

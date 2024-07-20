@@ -2,6 +2,10 @@
     .swiper {
         padding-left: 13px;
 
+        @media (min-width: $tablet-width) {
+            width: 50%;
+        }
+
         @media (min-width: $desktop-width) {
             padding-left: 0;
         }
